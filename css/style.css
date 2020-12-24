@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bebas neuw;
+}
+
+body {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #111;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+#realtime #time {
+    display: flex;
+}
+
+div {
+    position: relative;
+    margin: 0 5px;
+}
+
+div label {
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(to right, #111, #fff);
+    color: #111;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+}
+
+label:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    top: 0.5rem;
+    filter: blur(0.4rem);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+div label:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    z-index: 9;
+    color: #111;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #111, #fff);
+    top: 1px;
+}
+
+.hrs {
+    transition: 0.9s ease;
+}
+
+.hrs:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.mint {
+    transition: 0.9s ease;
+}
+
+.mint:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.sec {
+    transition: 0.9s ease;
+}
+
+.sec:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
